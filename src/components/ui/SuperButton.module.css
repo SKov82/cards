@@ -1,0 +1,46 @@
+.default, .red {
+    color:#00c6ff;
+    padding: 8px 12px;
+    width:100px;
+    text-decoration:none;
+    text-align:center;
+    margin:10px auto;
+    display: block;
+    background-image: linear-gradient(to left,transparent,transparent 50%,#00c6ff 50%,#00c6ff);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all .25s ease-in;
+    font: 400 14px tahoma;
+    border: 1px solid #00C6FF;
+    border-radius: 10px;
+}
+
+.default:disabled {
+    opacity: .4;
+    color: grey;
+    border: 1px solid gray;
+}
+
+.default:disabled:hover {
+    background-position: 100% 0;
+    color: inherit;
+    cursor: default;
+}
+
+.default:hover {
+    background-position: 0 0;
+    color:#fff;
+    cursor: pointer;
+}
+
+.red {
+    background-image: linear-gradient(to left,transparent,transparent 50%,red 50%,red);
+    color: red;
+    border: 1px solid red;
+}
+
+.red:hover {
+    background-position: 0 0;
+    color: white;
+    cursor: pointer;
+}
